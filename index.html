@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wethefit</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Recursive:wght@300;400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">    
+    <!-- fontsawesome -->
+    <script data-data-src="https://kit.fontawesome.com/b128be505e.js" crossorigin="anonymous"></script>
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+
+    <!-- bOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
+
+    <!-- oWL CAROUSEL -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <!-- main stylesyhee0t -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header id="home">
+        <!-- sticky bar here -->
+      <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand logo wethefit" href="#home">wethefit</a>
+            <button class="navbar-toggler my-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#classes">Classes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#rates">Membership</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="login.html">Sign In</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>  
+        
+
+        <!-- carousel here: display gym pics -->
+        <section class="slider">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-controls">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(assets/gym-muscle-man-lifing-weight-wethefit-gym.jpg);"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(assets/woman-meditating-wethefit-gym.jpg);"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(assets/a-gym-community-jogging-wethefit.jpg);"></button>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <img
+                 src="assets/left-arrow.svg" alt="Prev"
+                 data-src="assets/left-arrow.svg"
+                />
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <img
+                 src="assets/right-arrow.svg" alt="Next"
+                 data-src="assets/right-arrow.svg"
+                />
+              </button>
+          
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background-image: url(assets/gym-muscle-man-lifing-weight-wethefit-gym.jpg);">
+                <div class="container slider-text">
+                  <h3 class="slider-head">Lift'n'Buck</h3>
+                  <p class="slider-p">Photo by Tima Miroshnichenko from Pexels</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="background-image: url(assets/woman-meditating-wethefit-gym.jpg);">
+                <div class="container slider-text">
+                  <h3 class="slider-head">Mental Wellness</h3>
+                  <p class="slider-p">photo by Oluremi Adebayo from Pexels</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="background-image:url(assets/a-gym-community-jogging-wethefit.jpg);">
+                <div class="container slider-text">
+                  <h3 class="slider-head">Fit Community</h3>
+                  <p class="slider-p">photo by cottonbro from Pexels</p>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </section>        
+    </header>
+
+    
+    <section class="classes section-hidden section" id="classes">
+      <!-- gym classes with picture and description -->
+
+    <div class="container">
+      <div class="row">
+        <h3 class="class-head col-12 col-md-12 col-lg-12">Our Fitness Plans</h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: auto;">
+            <img 
+              src="assets/yoga-class-in-wethefit-gym-preloaded.jpg"
+              data-src="assets/yoga-class-in-wethefit-gym.jpg" class="card-img-top classes-img lazy-img" alt="yoga-class-in-wethefit-gym"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Yoga</h5>
+              <p class="card-text"><em>Photo by anthony shkraba from Pexels</em>. Nostrum, corrupti explicabo sapiente laborum numquam aperiam?</p>
+              <a href="#" class="btn btn-primary">Start Yoga</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: auto;">
+            <img 
+              src="assets/bulk-workout-in-wethefit-gym-preloaded.jpg"
+              data-src="assets/bulk-workout-in-wethefit-gym.jpg" class="card-img-top classes-img lazy-img" alt="Muscular Male getting ripped-bulk in wethefit gym"  
+            />
+            <div class="card-body">
+              <h5 class="card-title">Body Building</h5>
+              <p class="card-text"><em>Photo by Pixela audiovisuales from Pexels</em>. Nostrum, corrupti explicabo sapiente laborum numquam aperiam?</p>
+              <a href="#" class="btn btn-primary">Build Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: auto;">
+            <img 
+              src="assets/boxing-training-in-wethefit-gym-preloaded.jpg"
+              data-src="assets/boxing-training-in-wethefit-gym.jpg" class="card-img-top classes-img lazy-img" alt="boxing training in wethefit gym"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Boxing</h5>
+              <p class="card-text"><em>Photo by anushka ahuja from Pexels</em>. Nostrum, corrupti explicabo sapiente laborum numquam aperiam?</p>
+              <a href="#" class="btn btn-primary">Get into the ring</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: auto;">
+            <img 
+              src="assets/karate-martial-art-class-wethefit-gym-preloaded.jpg"
+              data-src="assets/karate-martial-art-class-wethefit-gym.jpg" class="card-img-top classes-img lazy-img" alt="karate-martial-art-class-wethefit-gym"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kick-Boxing</h5>
+              <p class="card-text"><em>Photo by anushka ahuja from Pexels</em>. Nostrum, corrupti explicabo sapiente laborum numquam aperiam?</p>
+              <a href="#" class="btn btn-primary">KIck with Us</a>
+            </div>
+          </div>
+        </div> 
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: auto;">
+            <img 
+              src="assets/dance-workout-in-wethefit-gym-preloaded.jpg" 
+              data-src="assets/dance-workout-in-wethefit-gym.jpg" class="card-img-top classes-img lazy-img" alt="Dance workout in conducive environment wethefit gym"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dance fitness</h5>
+              <p class="card-text"><em>Photo by michael zitel from Pexels</em>. Nostrum, corrupti explicabo sapiente laborum numquam aperiam?</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>  
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: auto;">
+            <img 
+              src="assets/woman-endurance-drilling-in-wethefit-gym-preload.jpg" 
+              data-src="assets/woman-endurance-drilling-in-wethefit-gym.jpg" class="card-img-top classes-img lazy-img" alt="woman-endurance-drilling-in-wethefit-gym"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Endurance Drilling</h5>
+              <p class="card-text"><em>Photo by li sun from Pexels</em>. Nostrum, corrupti explicabo sapiente laborum numquam aperiam?</p>
+              <a href="#" class="btn btn-primary">Resist Pain</a>
+            </div>
+          </div>
+        </div>  
+
+    </div>
+    </div>
+  </section>
+  <section class="slider section-hidden section">
+    <!-- meet our instructors -->
+    <div id="expert-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-controls">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#expert-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(assets/fit-trainer-in-wethefit-gym.jpg);"></button>
+          <button type="button" data-bs-target="#expert-carousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(assets/karate-master-sensei-sabon-wethefit-gym.jpg);"></button>
+          <button type="button" data-bs-target="#expert-carousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(assets/woman-meditating-wethefit-gym-spiritual.jpg);"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#expert-carousel" data-bs-slide="prev">
+          <img
+           src="assets/left-arrow.svg" alt="Prev"
+           data-src="assets/left-arrow.svg"
+          />
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#expert-carousel" data-bs-slide="next">
+          <img 
+            src="assets/right-arrow.svg" alt="Next"
+            data-src="assets/right-arrow.svg"
+          />
+        </button>
+    
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(assets/fit-trainer-in-wethefit-gym.jpg);">
+          <div class="container slider-text">
+            <h3 class="slider-head">Our Expert: <br> pikx lorem</h3>
+            <p class="slider-p">photo by pikx by panther from Pexels</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(assets/woman-meditating-wethefit-gym-spiritual.jpg);">
+          <div class="container slider-text">
+            <h3 class="slider-head">Our Expert: <br> Vlada pinnchio</h3>
+            <p class="slider-p">Photo by vlada karpovich from Pexels</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(assets/karate-master-sensei-sabon-wethefit-gym.jpg);">
+          <div class="container slider-text">
+            <h3 class="slider-head">Our Expert: <br>Pavel Ekpong</h3>
+            <p class="slider-p">Photo by pavel danilyuk from Pexels</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+</section>
+
+    <section class="reviews section section-hidden">
+      <div class="wrapper">
+        <div class="testimonial-carousel section-padding owl-carousel owl-theme">
+          <div class="single-testi">
+            <div class="img-area">
+              <img 
+                src="assets/wethefit-review-gym.jpg"
+                data-src="assets/wethefit-review-gym.jpg" alt="a man dancing wethefit gym"
+              />
+            </div>
+            <div class="img-text">
+              <h3>John Doe</h3>
+              <h4>Dancer</h4>
+              <p><em>Photo by yogendra singh from Pexels</em>. Assumenda omnis quis aliquam!</p>
+            </div>
+          </div>
+          <div class="single-testi">
+            <div class="img-area">
+              <img 
+                src="assets/wethefit-gym-review.jpg"
+                data-src="assets/wethefit-gym-review.jpg" alt="wethefit-gym-review"
+              />
+            </div>
+            <div class="img-text">
+              <h3>Doe</h3>
+              <h4>Business Man</h4>
+              <p><em>Photo by spencer selover from Pexels</em>. Assumenda omnis quis aliquam!</p>
+            </div>
+          </div>
+          <div class="single-testi">
+            <div class="img-area">
+              <img 
+               src="assets/bulk-male-review-wethefit.jpg"
+               data-src="assets/bulk-male-review-wethefit.jpg" alt="bulk-male-review-wethefit"
+              />
+            </div>
+            <div class="img-text">
+              <h3>John</h3>
+              <h4>Body Builder</h4>
+              <p><em>Photo by sabel blanco from Pexels</em>. Assumenda omnis quis aliquam!</p>
+            </div>
+          </div>
+          <div class="single-testi">
+            <div class="img-area">
+              <img
+               src="assets/wethefit-review-gym.jpg"
+               data-src="assets/aerobic-workout-review-wethefit.jpg" alt="aerobic-workout-review-wethefit"
+              />
+            </div>
+            <div class="img-text">
+              <h3>Runner Lorem</h3>
+              <h4>sprinter</h4>
+              <p><em>Photo by run 4 ffwpu from Pexels</em>. Assumenda omnis quis aliquam!</p>
+            </div>
+          </div>
+          <div class="single-testi">
+            <div class="img-area">
+              <img
+               src="assets/doctor-wethefit-review.jpg"
+               data-src="assets/doctor-wethefit-review.jpg" alt="doctor-wethefit-review"
+              />
+            </div>
+            <div class="img-text">
+              <h3> Doc </h3>
+              <h4>Medical Doctor</h4>
+              <p><em>Photo by thirdman from Pexels</em>. Assumenda omnis quis aliquam!</p>
+            </div>
+          </div>
+          <div class="single-testi">
+            <div class="img-area">
+              <img
+               src="assets/wethefit-programmer-review.jpg"
+               data-src="assets/wethefit-programmer-review.jpg" alt="wethefit-programmer-review"
+              />
+            </div>
+            <div class="img-text">
+              <h3>Pro Gram</h3>
+              <h4>Programmer</h4>
+              <p><em>Photo by djordje petrovic from Pexels</em>. Assumenda omnis quis aliquam!</p>
+            </div>
+          </div>
+          <div class="single-testi">
+            <div class="img-area">
+              <img
+                src="assets/wethefit-review-boxer.jpg"
+                data-src="assets/wethefit-review-boxer.jpg" alt="wethefit-review-boxer" 
+              />
+            </div>
+            <div class="img-text">
+              <h3>Box Man</h3>
+              <h4>Boxer</h4>
+              <p>L<em>Photo by pavel danilyuk from Pexels</em>. Assumenda omnis quis aliquam!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rates section section-hidden" id="rates">
+      <div class="container">
+        <div class="row text-center justify-content-center g-4">
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="card text-center" style="width: auto;">
+                <div class="card-header">
+                 <p>Most Popular</p>
+                </div>
+                <div class="card-body">
+                 <h5 class="card-title rates-title">12 MONTHS</h5>
+                 <p class="card-text price">$ <span style="font-weight: 800; font-size: 45px;">50</span> /MO</p>
+                 <p class="card-text">4x Consultation</p>
+                 <p class="card-text">Group Classes</p>
+                 <p class="card-text">1 Personal Trainer</p>
+                 <p class="card-text">Unlimited Gym Use</p>
+                 <p class="card-text">Access to all Clubs</p>
+                </div>
+                <div class="card-footer">
+                 <div class="d-grid gap-2">
+                   <a href="#" class="btn btn-lg btn-dark rates-btn">Get Fit with Us!</a>
+                 </div>
+                </div>
+              </div>              
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="card" style="width: auto;">
+               <div class="card-body">
+                <h5 class="card-title rates-title">7 DAYS</h5>
+                <p class="card-text price">$<span style="font-weight: 800; font-size: 45px;">0</span>/wk</p>
+                <p class="card-text">Free Consultation</p>
+                <p class="card-text">Free Group Classes</p>
+                <p class="card-text">Free Personal Trainer</p>
+                <p class="card-text">Free Gym Use</p>
+                <p class="card-text">Free Access to all Clubs</p>
+               </div>
+                <div class="card-footer">
+                  <div class="d-grid gap-2">
+                   <a href="#" class="btn btn-lg btn-dark rates-btn">Get Fit with Us</a>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+              <div class="card" style="width: auto;">
+                <div class="card-body">
+                 <h5 class="card-title rates-title">12 MONTHS</h5>
+                 <p class="card-text price">$<span style="font-weight: 800; font-size: 45px;">79.99</span>/MO</p>
+                 <p class="card-text">Unlimited Consultation</p>
+                 <p class="card-text">Unlimited Group Classes</p>
+                 <p class="card-text">4 Personal Trainers</p>
+                 <p class="card-text">Unlimited Gym Use</p>
+                 <p class="card-text">Access to all Clubs</p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-grid gap-2">
+                   <a href="#" class="btn btn-lg btn-dark rates-btn">Get Fit with Us</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="gym section section-hidden" id="gym">
+        <!-- a link to gym tour -->
+          <div class="gym-tour text-center justify-content-center" style="background-image: url(assets/wethefit-treadmills-gym.jpg);">
+            <div class="gym-text">
+              <h4>Our Facility</h4>
+              <hr>
+              <p>Take a virtual tour through our facility.</p>
+            </div>
+            <button class="btn btn-primary btn-lg">Take a Tour!</button>
+          </div>
+    </section>
+
+    <footer class="section section-hidden" id="about">
+        <!-- about goes here -->
+        <div class="about text-center justify-content-center">
+          <h2>About Us: wethefit</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque itaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid, deserunt repudiandae aliquam facere animi eum voluptate illum adipisci, modi provident possimus doloribus vitae ad laboriosam. Totam, vel officiis? sit rerum vero accusamus enim quia architecto doloremque, adipisci ipsa laboriosam quas ullam reiciendis. Eius nobis omnis dolorem fuga ea impedit doloribus? Sunt, libero? Nesciunt necessitatibus officia itaque distinctio excepturi rerum ea rem tempora velit, eaque et molestiae ducimus cupiditate!</p>
+        </div>
+        <!-- contact and socials -->
+        <div class="container" id="contact">
+          <div class="address text-center">
+            <h2>Bulk with Us:</h2>
+            <address class="address" style="font-style: italic;">
+              50, somewhere in a new world, <br>
+              Earth.
+            </address>
+          </div>
+          <div class="social-links">
+            <!-- add font icons for social links -->
+            <a href="https://wa.me/+2348145092994"><i class="icon fab fa-3x fa-whatsapp-square"></i></a>
+            <a href="tel:+2348145092994"><i class="icon phone fas fa-3x fa-phone-square-alt"></i></a>
+            <a href="mailto:"><i class="icon fas fa-envelope-square fa-3x"></i></a>
+            <a href="#"><i class="icon facebook fab fa-facebook-square fa-3x"></i></a>
+            <a href="#"><i class="icon fab fa-3x fa-twitter-square"></i></a>
+            <a href="#"><i class="icon fab fa-instagram-square fa-3x"></i></a>
+
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="copyright"><p>&copy;jae-wethefit<span class="copy-year"></span></p></div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="bootstrap/bootstrap.bundle.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/copyright.js"></script>
+    <script>
+          $('.testimonial-carousel').owlCarousel({
+              loop: true,
+              margin: 20,
+              autoplay: true,
+              dots: true,
+              responsive: {
+                  0:{
+                      items:1
+                  },
+                  600:{
+                      items:2
+                  },
+                  1000:{
+                      items:3
+                  }
+              }
+          });
+    </script>
+
+
+</body>
+</html>
