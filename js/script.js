@@ -1,13 +1,16 @@
 "use strict";
+
 window.addEventListener("scroll", function () {
   let nav = document.querySelector("nav");
   let windowposition = window.scrollY > 0;
+  let windowpos2 = this.window.screenY <= 0;
 
   nav.classList.toggle("scrolling-active", windowposition);
+  nav.classList.toggle("not-scrolling", windowpos2);
 });
 
 const images = document.querySelectorAll(".classes-img");
-console.log(images);
+
 let imageOptions = {
   root: null,
   threshold: 0.2,
@@ -33,11 +36,10 @@ images.forEach((image) => {
 const sections = document.querySelectorAll(".section");
 
 function sectionObserverf(entries, observer) {
-  console.log(entries);
   const [entry] = entries;
-  if (!entry.isIntersecting) return
-  entry.target.classList.remove('section-hidden')
-  sectionObserver.unobserve(entry.target)
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section-hidden");
+  sectionObserver.unobserve(entry.target);
 }
 
 const sectionOptions = {
