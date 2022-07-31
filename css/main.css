@@ -35,12 +35,16 @@ body {
 }
 
 .not-scrolling {
-  background-color: hsla(0, 0%, 0%, 0.70) !important;
+  background-color: hsla(0, 0%, 0%, 0.7) !important;
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.5) !important;
 }
 
 .not-scrolling nav {
   height: 1.5rem !important;
+}
+
+.all-black {
+  background-color: hsl(0, 0%, 0%) !important;
 }
 
 /* apply styles after scroll */

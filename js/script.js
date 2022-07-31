@@ -1,7 +1,16 @@
 "use strict";
 
+let nav = document.querySelector("nav");
+let toggler = document.querySelector(".my-toggler");
+
+toggler.addEventListener("click", () => {
+  let togglerExpanded = toggler.getAttribute("aria-expanded");
+  togglerExpanded === "true"
+    ? nav.classList.add("all-black")
+    : nav.classList.remove("all-black");
+});
+
 window.addEventListener("scroll", function () {
-  let nav = document.querySelector("nav");
   let windowposition = window.scrollY > 0;
   let windowpos2 = this.window.screenY <= 0;
 
