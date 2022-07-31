@@ -13,6 +13,9 @@ toggler.addEventListener("click", () => {
 window.addEventListener("scroll", function () {
   let windowposition = window.scrollY > 0;
   let windowpos2 = this.window.screenY <= 0;
+  let togglerExpanded = toggler.getAttribute("aria-expanded");
+
+  windowposition && togglerExpanded === "true" && toggler.click();
 
   nav.classList.toggle("scrolling-active", windowposition);
   nav.classList.toggle("not-scrolling", windowpos2);
